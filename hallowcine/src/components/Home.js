@@ -1,4 +1,5 @@
 import React from 'react';
+import './home.css';
 
 class Home extends React.Component {
     constructor(props){
@@ -12,10 +13,6 @@ class Home extends React.Component {
         return (
             <div style={{width: '100%', margin: 'auto'}}>
                 <h1>Hello</h1>
-
-
-
-
             </div>
         
         )
