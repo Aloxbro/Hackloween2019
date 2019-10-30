@@ -12,9 +12,9 @@ function Main() {
     return (
         <Switch>
             <Route exact path="/" component={LandingPage} />
-            <Route exact path="/home" component={Home} />
-            <Route exact path="/our-selection" component={OurSelection} />
-            <Route exact path="/try-me" component={TryMe} />
+            <Route path="/home" component={Home} />
+            <Route path="/our-selection" component={OurSelection} />
+            <Route path="/try-me" component={TryMe} />
         </Switch>
     )
 }
