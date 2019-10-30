@@ -1,4 +1,5 @@
 import React from 'react';
+import MovieCard from "./MovieCard"
 
 class LandingPage extends React.Component {
     constructor(props){
@@ -12,7 +13,7 @@ class LandingPage extends React.Component {
         return (
             <div style={{width: '100%', margin: 'auto'}}>
                 <h1>Hello</h1>
-
+                <MovieCard />
 
 
 
