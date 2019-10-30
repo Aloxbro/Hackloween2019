@@ -4,7 +4,7 @@ class LandingPage extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            name: null
+            name: ""
         }
     }
 
