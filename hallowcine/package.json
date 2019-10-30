@@ -6,6 +6,7 @@
     "axios": "^0.19.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-fittext": "^1.0.0",
     "react-glitch-effect": "^1.0.4",
     "react-mdl": "^1.11.0",
     "react-router-dom": "^5.1.2",
