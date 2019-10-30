@@ -1,6 +1,7 @@
-import React from 'react';
-import "./LandingPage.css";
+import React from 'react'
+import "./LandingPage.css"
 import Popup from './Popup'
+import Home from './Home'
 
 class LandingPage extends React.Component {
     constructor(props){
@@ -13,7 +14,7 @@ class LandingPage extends React.Component {
     togglePopup() {
         this.setState({
           showPopup: !this.state.showPopup
-        });
+        })
     }    
     render(){
         return (
@@ -35,7 +36,7 @@ class LandingPage extends React.Component {
 
                     <div className="item">
                         <span>
-                        <button>
+                        <button onClick={Home}>
                         Treat
                         </button>
                         </span>
