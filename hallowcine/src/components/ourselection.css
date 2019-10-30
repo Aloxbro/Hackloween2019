@@ -1,0 +1,61 @@
+.div-body{
+    background: url('https://cdn.pixabay.com/photo/2016/09/29/11/56/halloween-1702677_960_720.jpg') fixed center;
+    background-size: cover;
+}
+
+.grid-one{
+    text-align: center;
+    height: 100%;
+} 
+
+.grid-one hr{
+    color: orange;
+    size: 50%;
+}
+
+.grid-one h1{
+    color: white;
+    font-size: 33px;
+}
+
+.grid-one p{
+    text-align: center;
+    margin: auto;
+    color: orange;
+    font-size: 25px;
+}
+
+.cell-title{
+    color: white;
+    font-size: 10px;
+}
+
+.cell-one{
+    background-color: black;
+    opacity: .8; 
+    width: 75%;
+    height: 10%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.cell-two{
+    display: flex;
+    background-color: black;
+    opacity: .8;  
+    width: 75%;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cell-two h1{
+    color: white;
+    font-size: 33px;
+}
+
+.cell-one img{
+    height: 500px;
+    padding: 25px 0px;
+}
