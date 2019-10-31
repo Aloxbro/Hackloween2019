@@ -1,9 +1,7 @@
-import React/* , {useState, useEffect} */ from "react"
+import React from "react"
 import ItemsCarousel from "react-items-carousel"
 import axios from "axios"
 import ReactFitText from "react-fittext"
-
-// export default () => {
 
 export default class Carousel extends React.Component {
 	constructor(props) {
@@ -13,10 +11,9 @@ export default class Carousel extends React.Component {
 			getMovies: "",
 			chevronWidth: 40,
 		}
+		this.nextCard = this.nextCard.bind(this)
+		this.previousCard = this.previousCard.bind(this)
 	}
-	// const [activeItemIndex, setActiveItemIndex] = useState(0)
-	// const chevronWidth = 40
-	// const [getMovies, setGetMovies] = useState([])
 
 	componentDidMount() {
 		axios
@@ -24,24 +21,24 @@ export default class Carousel extends React.Component {
 			.then(response => this.setState({getMovies: response.data}))
 	}
 
-	// useEffect(() => {
-	// 	axios
-	// 		.get("https://hackathon-wild-hackoween.herokuapp.com/movies/")
-	// 		.then(response => setGetMovies({getMovies: response.data}))
-	// 		)
-	// }, [])
+	nextCard() {
+		this.setState({activeItemIndex: this.state.activeItemIndex + 1})
+	}
+
+	previousCard() {
+		this.setState({activeItemIndex: this.state.activeItemIndex - 1})
+	}
 
 	render() {
 		return (
 			<div style={{padding: `0 ${this.state.chevronWidth}px`}}>
 				<ItemsCarousel
 					infiniteLoop={true}
-					requestToChangeActive={this.state.activeItemIndex/*this.setState({activeItemIndex: 0})*/}
 					activeItemIndex={this.state.activeItemIndex}
 					numberOfCards={4}
 					gutter={20}
-					leftChevron={<button>{"<"}</button>}
-					rightChevron={<button>{">"}</button>}
+					leftChevron={<button onClick={this.previousCard}>{"<"}</button>}
+					rightChevron={<button onClick={this.nextCard}>{">"}</button>}
 					chevronWidth={this.state.chevronWidth}
 					outsideChevron={true}
 				>
@@ -57,7 +54,7 @@ export default class Carousel extends React.Component {
 									<h2 className="MovieCardTitle">{movie.title}</h2>
 								</ReactFitText>
 								<p className="MovieCardDirector">
-									Réalisateur: {movie.director}{" "}
+									Réalisateur: {movie.director}
 								</p>
 								<p className="MovieCardYear">Année: {movie.year} </p>
 							</div>
