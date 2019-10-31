@@ -2,6 +2,7 @@ import React from "react"
 import ItemsCarousel from "react-items-carousel"
 import axios from "axios"
 import ReactFitText from "react-fittext"
+import "./Carousel.css"
 
 export default class Carousel extends React.Component {
 	constructor(props) {
@@ -31,7 +32,7 @@ export default class Carousel extends React.Component {
 
 	render() {
 		return (
-			<div style={{padding: `0 ${this.state.chevronWidth}px`}}>
+			<div classname="body-carousel"style={{padding: `0 ${this.state.chevronWidth}px`}}>
 				<ItemsCarousel
 					infiniteLoop={true}
 					activeItemIndex={this.state.activeItemIndex}
@@ -51,10 +52,10 @@ export default class Carousel extends React.Component {
 									className="MovieCardImage"
 								/>
 								<ReactFitText compressor="0.1" maxFontSize="30px">
-									<h2 className="MovieCardTitle">{movie.title}</h2>
+									<h2 className="MovieCardTitle">{movie.title.replace(/_/g, " ")}</h2>
 								</ReactFitText>
 								<p className="MovieCardDirector">
-									Réalisateur: {movie.director}
+									Réalisateur: {movie.director.replace(/_/g, " ")}
 								</p>
 								<p className="MovieCardYear">Année: {movie.year} </p>
 							</div>

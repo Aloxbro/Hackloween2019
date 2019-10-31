@@ -1,0 +1,28 @@
+.mdl-layout__content{
+  background: url('https://cdn.pixabay.com/photo/2016/09/29/11/56/halloween-1702677_960_720.jpg') fixed center;
+  background-size: cover;
+}
+
+.MovieCard * {
+	padding: 0;
+	margin: 0;
+}
+
+.MovieCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2% 0;
+	background: orange;
+	border-radius: 5%;
+	overflow: hidden;
+}
+
+.MovieCard .MovieCardImage {
+	width: 100%;
+	height: auto;
+}
+
+.MovieCard .MovieCardTitle {
+  font-size: 4vw;
+}
