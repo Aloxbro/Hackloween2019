@@ -18,6 +18,7 @@ function OurSelection() {
         <Cell className="cell-two" col={6}>
           <div>
           <h3>Saw</h3>
+          <hr/>
           <p>
             Deux hommes, Adam et Lawrence, sont enchaînés dans une salle de
             bains sanglante. Tous deux ne se connaissent pas, mais ont été
@@ -26,6 +27,7 @@ function OurSelection() {
             doit s'échapper de la salle de bains et l'autre doit le tuer ; sinon
             sa femme et sa fille mourront.
           </p>
+          <hr/>
           </div>
         </Cell>
         <Cell className="cell-title" col={12}>
@@ -38,6 +40,9 @@ function OurSelection() {
           />
         </Cell>
         <Cell className="cell-two" col={6}>
+          <div>
+          <h3>Psychose</h3>
+          <hr/>
           <p>
             Marion Crane en a assez de ne pouvoir mener sa vie comme elle
             l'entend. Son travail ne la passionne plus, son amant ne peut
@@ -46,6 +51,8 @@ function OurSelection() {
             déposer 40 000 dollars à la banque. La tentation est trop grande, et
             Marion s'enfuit avec l'argent.
           </p>
+          <hr/>
+          </div>
         </Cell>
         <Cell className="cell-title" col={12}>
           <h1>Coup de coeur de Jessy</h1>
@@ -57,6 +64,9 @@ function OurSelection() {
           />
         </Cell>
         <Cell className="cell-two" col={6}>
+          <div>
+          <h3>Shining</h3>
+          <hr/>
           <p>
             Écrivain, Jack Torrance est engagé comme gardien, pendant tout
             l’hiver, d’un grand hôtel isolé du Colorado – l’Overlook – où il
@@ -67,6 +77,8 @@ function OurSelection() {
             secrets de l’hôtel et bascule peu à peu dans une forme de folie
             meurtrière où il s’en prend à sa propre famille…
           </p>
+          <hr/>
+          </div>
         </Cell>
         <Cell className="cell-title" col={12}>
           <h1>Coup de coeur de Sophie</h1>
@@ -78,6 +90,9 @@ function OurSelection() {
           />
         </Cell>
         <Cell className="cell-two" col={6}>
+          <div>
+          <h3>Poltergeist</h3>
+          <hr/>
           <p>
             Lorsque les Bowen emménagent dans leur nouvelle maison, ils sont
             rapidement confrontés à des phénomènes étranges. Une présence hante
@@ -85,6 +100,8 @@ function OurSelection() {
             avoir une chance de la revoir, tous vont devoir mener un combat
             acharné contre un terrifiant poltergeist…
           </p>
+          <hr/>
+          </div>
         </Cell>
       </Grid>
     </div>

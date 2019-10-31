@@ -13,7 +13,7 @@ function App() {
     <Router>
         <div style={{ width: "100%", margin: "auto" }}>
           <Layout>
-            <Header className="header-color" title="Hallowcine" scroll>
+            <Header transparent title="Title" className="header-color" title="Hallowcine"  scroll>
               <Navigation>
                 <Link to="/home">Home</Link>
                 <Link to="/our-selection">Our Selection</Link>

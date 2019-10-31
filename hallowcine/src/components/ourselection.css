@@ -50,16 +50,29 @@
     margin: auto;
     border-radius: 10px;
     text-align: center;
+    align-content: space-between;;
 }
 
 .cell-two h3{
     text-align: center;
-    color: white;
+    color: orange;
     font-size: 33px;
     padding-bottom:50px;
+}
+
+.cell-two p{
+    padding-bottom: 20px;
 }
 
 .cell-one img{
     height: 500px;
     padding: 25px 0px;
+}
+
+.cell-two hr{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 30%;
+    width: 40%;
+    border-color: orange;
 }
