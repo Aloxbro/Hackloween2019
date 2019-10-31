@@ -14,3 +14,36 @@ span.mdl-layout-title{
 .mdl-layout__drawer.is-visible{
     background: orange;
 }
+
+.home-btn:hover{
+    color: white
+}
+
+.home-btn{
+    color: orange;
+    font-size: 33px;
+    font-family: Creepster;
+    margin: Auto;
+}
+
+.our-selection-btn:hover{
+    color: white
+}
+
+.our-selection-btn{
+    color: orange;
+    font-size: 33px;
+    font-family: Creepster;
+    margin: Auto;
+}
+
+.try-me-btn:hover{
+    color: white
+}
+
+.try-me-btn{
+    color: orange;
+    font-size: 33px;
+    font-family: Creepster;
+    margin: Auto;
+}

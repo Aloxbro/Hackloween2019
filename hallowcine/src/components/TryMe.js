@@ -4,7 +4,7 @@ import GlitchEffect from "react-glitch-effect";
 
 function TryMe () {
     return (
-        <GlitchEffect onHover duration="20s">
+        <GlitchEffect onHover duration="15s">
             <Home />
         </GlitchEffect>
     )
