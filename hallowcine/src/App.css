@@ -12,7 +12,9 @@ span.mdl-layout-title{
 }
 
 .mdl-layout__drawer.is-visible{
-    background: orange;
+    background: black;
+    display: flex;
+    justify-content: space-between;
 }
 
 .home-btn:hover{
@@ -46,4 +48,13 @@ span.mdl-layout-title{
     font-size: 33px;
     font-family: Creepster;
     margin: Auto;
+}
+
+.linkbutton{
+    font-weight: bold;
+    color:orange
+}
+
+.logo-muertos{
+    width:  auto;
 }

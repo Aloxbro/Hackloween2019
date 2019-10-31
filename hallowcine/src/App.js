@@ -28,10 +28,17 @@ function App() {
             </Header>
             <Drawer>
               <Navigation>
-                <Link to="/home">Home</Link>
-                <Link to="/our-selection">Our Selection</Link>
-                <Link to="/try-me">Try Me</Link>
+                <Link to="/home">
+                  <p className="linkbutton">Home</p>
+                  </Link>
+                <Link to="/our-selection">
+                  <p className="linkbutton">Our Selection</p>
+                  </Link>
+                <Link to="/try-me">
+                  <p className="linkbutton">Try Me</p>
+                  </Link>
               </Navigation>
+              <img src="https://imgur.com/cmQ5TzQ.png" alt="logo qui dechire" className="logo-muertos"/>  
             </Drawer>
             <Content>
               <div className="page-content" />
