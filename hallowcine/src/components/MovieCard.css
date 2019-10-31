@@ -1,0 +1,25 @@
+.MovieCard * {
+	padding: 0;
+	margin: 0;
+}
+
+.MovieCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 20%;
+	height: 40%;
+	margin: 2% 0;
+	background: orange;
+	border-radius: 5%;
+	overflow: hidden;
+}
+
+.MovieCard .MovieCardImage {
+	width: 100%;
+	height: auto;
+}
+
+.MovieCard .MovieCardTitle {
+	font-size: 4vw;
+}
