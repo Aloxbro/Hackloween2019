@@ -16,6 +16,8 @@ function OurSelection() {
           />
         </Cell>
         <Cell className="cell-two" col={6}>
+          <div>
+          <h3>Saw</h3>
           <p>
             Deux hommes, Adam et Lawrence, sont enchaînés dans une salle de
             bains sanglante. Tous deux ne se connaissent pas, mais ont été
@@ -24,6 +26,7 @@ function OurSelection() {
             doit s'échapper de la salle de bains et l'autre doit le tuer ; sinon
             sa femme et sa fille mourront.
           </p>
+          </div>
         </Cell>
         <Cell className="cell-title" col={12}>
           <h1>Coup de coeur d'Anthony</h1>

@@ -14,7 +14,6 @@ class Home extends React.Component {
     render(){
         return (
             <div style={{width: '100%', margin: 'auto'}}>
-                <h1>Hello</h1>
                 <Carousel />
             </div>
         
