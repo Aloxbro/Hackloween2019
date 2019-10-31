@@ -1,5 +1,7 @@
 import React from 'react';
 import './home.css';
+import Carousel from "./Carousel"
+
 
 class Home extends React.Component {
     constructor(props){
@@ -12,7 +14,7 @@ class Home extends React.Component {
     render(){
         return (
             <div style={{width: '100%', margin: 'auto'}}>
-                <h1>Hello</h1>
+                <Carousel />
             </div>
         
         )
