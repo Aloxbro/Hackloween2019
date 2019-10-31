@@ -1,7 +1,8 @@
 import React from 'react'
 import "./LandingPage.css"
 import Popup from './Popup'
-import Home from './Home'
+import './Home'
+import {Link} from "react-router-dom"
 
 class LandingPage extends React.Component {
     constructor(props){
@@ -36,9 +37,11 @@ class LandingPage extends React.Component {
 
                     <div className="item">
                         <span>
-                        <button onClick={Home}>
-                        Treat
-                        </button>
+                            <Link to="/home">
+                            <button>
+                            Treat
+                            </button>
+                            </Link>
                         </span>
                     </div>
 
