@@ -14,6 +14,7 @@ export default class Carousel extends React.Component {
 		}
 		this.nextCard = this.nextCard.bind(this)
 		this.previousCard = this.previousCard.bind(this)
+		this.randomFilm = this.randomFilm.bind(this)
 	}
 
 	componentDidMount() {
@@ -30,13 +31,20 @@ export default class Carousel extends React.Component {
 		this.setState({activeItemIndex: this.state.activeItemIndex - 1})
 	}
 
+	randomFilm () {
+		let randomized = Math.floor((Math.random() * 82) + 1)
+		this.setState({activeItemIndex: randomized})
+	}
+
 	render() {
 		return (
+			<section>
+			<button className="random-button" onClick={this.randomFilm}>Scare me</button>
 			<div classname="body-carousel"style={{padding: `0 ${this.state.chevronWidth}px`}}>
 				<ItemsCarousel
 					infiniteLoop={true}
 					activeItemIndex={this.state.activeItemIndex}
-					numberOfCards={4}
+					numberOfCards={3}
 					gutter={20}
 					leftChevron={<button onClick={this.previousCard}>{"<"}</button>}
 					rightChevron={<button onClick={this.nextCard}>{">"}</button>}
@@ -65,6 +73,7 @@ export default class Carousel extends React.Component {
 					)}
 				</ItemsCarousel>
 			</div>
+			</section>
 		)
 	}
 }

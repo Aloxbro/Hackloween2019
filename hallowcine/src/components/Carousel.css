@@ -26,3 +26,9 @@
 .MovieCard .MovieCardTitle {
   font-size: 4vw;
 }
+
+.random-button{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
