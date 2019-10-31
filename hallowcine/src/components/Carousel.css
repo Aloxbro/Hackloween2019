@@ -17,6 +17,11 @@
 	color: orange;
 	border-radius: 5%;
 	overflow: hidden;
+	transition: transform 1s;
+}
+
+.MovieCard .MovieCardImage:hover{
+	transform: translateY(-20px)
 }
 
 .MovieCard .MovieCardImage {
